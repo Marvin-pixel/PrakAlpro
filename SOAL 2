@@ -1,0 +1,30 @@
+harga_beli_gerard1 = 650000  
+jumlah_gram1 = 25
+total_beli1 = harga_beli_gerard1 * jumlah_gram1
+
+harga_sekarang = 685000  
+total_jual1 = harga_sekarang * jumlah_gram1
+
+keuntungan1 = total_jual1 - total_beli1
+persentase_keuntungan1 = (keuntungan1 / total_beli1) * 100
+
+print("Keuntungan pertama Gerard:")
+print(f"Keuntungan dalam Rp: Rp {keuntungan1:,}")
+print(f"Keuntungan dalam %: {persentase_keuntungan1:.2f}%\n")
+
+jumlah_gram2 = 15
+harga_beli_gerard2 = 685000
+total_beli2 = harga_beli_gerard2 * jumlah_gram2
+
+total_gram = jumlah_gram1 + jumlah_gram2
+total_beli_keseluruhan = total_beli1 + total_beli2
+
+harga_akhir = 715000
+total_jual_akhir = total_gram * harga_akhir
+
+keuntungan2 = total_jual_akhir - total_beli_keseluruhan
+persentase_keuntungan2 = (keuntungan2 / total_beli_keseluruhan) * 100
+
+print("Keuntungan akhir Gerard setelah membeli lagi dan harga naik:")
+print(f"Keuntungan dalam Rp: Rp {keuntungan2:,}")
+print(f"Keuntungan dalam %: {persentase_keuntungan2:.2f}%")
